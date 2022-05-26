@@ -318,7 +318,7 @@ body.is-preload #header.alt {
   height: 100vh;
   min-height: 100vh;
   position: relative;
-  top: -4rem;
+  top: -2rem;
   margin-top: -2rem !important;
 }
 
@@ -346,8 +346,8 @@ body.is-preload #header.alt {
 }
 
 #banner h1 {
-  font-size: 3rem;
-  margin-top: -2rem;
+  font-size: 2.5rem;
+  margin-top: -4rem;
 }
 
 #banner > .inner {
@@ -369,7 +369,7 @@ body.is-preload #header.alt {
   width: 50%;
   margin-bottom: 4rem;
   margin-top: 4rem;
-  margin-left: 1rem;
+  margin-left: -1rem;
 }
 
 #banner > .inner header {

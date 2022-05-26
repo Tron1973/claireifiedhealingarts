@@ -78,7 +78,7 @@ input,
 select,
 textarea {
   color: #ffffff;
-  font-family: futura;
+  font-family: futura, sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
   letter-spacing: 0.025em;
