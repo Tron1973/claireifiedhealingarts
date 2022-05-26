@@ -315,10 +315,9 @@ body.is-preload #header.alt {
   background-size: cover;
   border-bottom: 0 !important;
   cursor: default;
-  height: 100vh;
   min-height: 100vh;
   position: relative;
-  top: -2rem;
+  top: -4rem;
   margin-top: -2rem !important;
 }
 
@@ -366,7 +365,7 @@ body.is-preload #header.alt {
 
 #banner > .inner > img {
   height: auto;
-  width: 50%;
+  max-width: 40%;
   margin-bottom: 4rem;
   margin-top: 4rem;
   margin-left: -1rem;
