@@ -114,12 +114,16 @@
 }
 
 .tiles article h3 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   padding: 1rem;
 }
 
 .tiles article h3 a:hover {
   color: inherit !important;
+}
+
+#one article p {
+  font-size: 1.5rem;
 }
 
 .tiles article p {
@@ -185,62 +189,27 @@
 }
 
 .tiles article:nth-child(6n - 5):before {
-  background-color: #45c3d3;
+  background-color: #fffac3;
 }
 
 .tiles article:nth-child(6n - 4):before {
-  background-color: #002e56;
+  background-color: #92f1fb;
 }
 
 .tiles article:nth-child(6n - 3):before {
-  background-color: #ffde00;
+  background-color: #54e9fc;
 }
 
 .tiles article:nth-child(6n - 2):before {
-  background-color: #006293;
+  background-color: #a2f9ec;
 }
 
 .tiles article:nth-child(6n - 1):before {
-  background-color: #002e56;
+  background-color: #fffac3;
 }
 
 .tiles article:nth-child(6n):before {
   background-color: #45c3d3;
-}
-
-@media screen and (max-width: 1280px) {
-  .tiles article {
-    padding: 4em 3em 2em 3em;
-    height: 100%;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .tiles article {
-    width: auto !important;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  .tiles article {
-    padding: 3em 1.5em 1em 1.5em;
-    height: 100%;
-  }
-
-  .tiles article h3 {
-    font-size: 1.5em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .tiles {
-    display: block;
-  }
-
-  .tiles article {
-    height: 100%;
-    width: 100% !important;
-  }
 }
 
 /* Main */
@@ -262,13 +231,6 @@
   margin: 0 auto;
   max-width: 65em;
   width: calc(100% - 6em);
-}
-
-@media screen and (max-width: 736px) {
-  #main > * > .inner {
-    padding: 3em 0 1em 0;
-    width: calc(100% - 3em);
-  }
 }
 
 #main.alt {
@@ -300,7 +262,7 @@
   position: relative;
 }
 
-.services > ul > li > .columns > h2 {
+.services > ul > li > .columns > h3 {
   font-size: 2rem;
   text-align: center;
   color: #45c3d3;
@@ -311,14 +273,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 1rem 0.5rem;
   color: slategrey;
   list-style: none;
 }
 
 .services b {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-variant-caps: petite-caps;
   color: #45c3d3;
   list-style: none;
@@ -329,7 +291,7 @@
 }
 
 .services > ul > li > p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   padding: 1rem 1rem;
   color: slategrey;
@@ -342,7 +304,7 @@
 }
 
 .services > ul > li > .columns > ul > p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
   color: slategrey;
   list-style: none;
@@ -352,7 +314,7 @@
 
 .columns a {
   background-color: #002e56;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 1rem;
   margin: 1rem;
   border-radius: 2rem;
@@ -383,8 +345,90 @@
   justify-content: center;
 }
 .services .button-solid {
+  font-size: .9rem;
   margin: 0;
-  height: 2.94444444rem;
-  padding-top: 0.16666667rem;
-  width: 13.88888889rem;
+  height: 3rem;
+  padding-top: 0.35rem;
+  width: 13rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 1280px) {
+  .tiles article {
+    padding: 4em 3em 2em 3em;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .tiles article {
+    width: auto !important;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .tiles article {
+    padding: 2em auto 1em auto;
+    height: 100%;
+  }
+
+  .tiles > h3 {
+    font-size: 1.5em;
+    padding: 0;
+  }
+ 
+  #main > * > .inner {
+    padding: 2em 0 1em 0;
+    width: calc(100% - 3em);
+  }
+
+  .services > ul > li > .columns > h3 {
+    font-size: 1.5rem;
+  }
+
+  .services > ul > li > .columns > ul > li {
+    font-size: 1.1rem;
+  }
+
+  .services > ul > li > .columns > ul > p > b  {
+    font-size: 1.1rem;
+  }
+
+  .services > ul > li > .columns > ul > p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tiles {
+    display: block;
+  }
+
+  .tiles article {
+    height: 100%;
+    width: 100% !important;
+  }
+
+  #one  h3 {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+
+  #one > article > .major > p {
+    font-size: 1.1rem;
+    padding: 0;
+  }
+ 
+  #main > * > .inner {
+    padding: 2em 0 1em 0;
+    width: calc(100% - 3em);
+  }
+
+  .columns {
+    padding: 2em 3rem 1em 2rem;
+  }
 }

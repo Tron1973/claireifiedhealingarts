@@ -1,0 +1,462 @@
+
+
+/* Tiles */
+
+.tiles {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-top: 0 !important;
+  }
+  
+  .tiles + * {
+    border-top: 0 !important;
+  }
+  
+  .tiles article {
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease,
+      -moz-filter 1s ease, -webkit-filter 1s ease;
+    -webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease,
+      -webkit-filter 1s ease, -webkit-filter 1s ease;
+    -ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease,
+      -ms-filter 1s ease, -webkit-filter 1s ease;
+    transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease,
+      -webkit-filter 1s ease;
+    padding: 4em 4em 2em 4em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: default;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .tiles article .image {
+    display: none;
+  }
+  
+  .tiles article header {
+    position: relative;
+    z-index: 3;
+  }
+  
+  .tiles article h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 1rem;
+  }
+
+  .tiles article h4 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: .5rem 0;
+    padding: 1rem;
+  }
+  
+  .tiles article p {
+    padding: 1rem;
+  }
+  
+  #one {
+    margin-bottom: 2rem;
+    background-color: #fff;
+  }
+  
+  #one article p {
+    font-size: 1.5rem;
+  }
+  
+  .tiles article .link.primary {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+  }
+  
+  .tiles article:before {
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.85;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .tiles article:after {
+    background-color: rgba(47, 55, 95, 0.25);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .tiles article:hover:before {
+    opacity: 0;
+  }
+  
+  .tiles article.is-transitioning {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+    -moz-filter: blur(0.5em);
+    -webkit-filter: blur(0.5em);
+    -ms-filter: blur(0.5em);
+    filter: blur(0.5em);
+    opacity: 0;
+  }
+  
+  .tiles article {
+    width: 100%;
+  }
+  
+  .tiles article:nth-child(6n - 5):before {
+    background-color: rgba(84,233,252,1);
+  }
+    
+  /*-- -------------------------- -->
+  <---           MAIN             -->
+  <--- -------------------------- -*/
+  
+  #main {
+    background-color: #ffffff;
+  }
+  
+  #main > * {
+    border-top: solid 1px rgba(212, 212, 255, 0.1);
+  }
+  
+  #main > *:first-child {
+    border-top: 0;
+  }
+  
+  #main > * > .inner {
+    padding: 4rem 0 2rem 0;
+    margin: 0 auto;
+    max-width: 65rem;
+    width: calc(100% - 6rem);
+  }
+  
+  #main.alt {
+    background-color: transparent;
+    border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+  }
+  
+  /*-- -------------------------- -->
+  <---    RECONNECTIVE HEALING    -->
+  <--- -------------------------- -*/
+  .services {
+    font-family: century gothic, futura, sans-serif;
+    padding: 2rem;
+    width: 96%;
+  }
+  .services > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 2.5rem;
+    text-align: center;
+    padding-left: 0 !important;
+  }
+  
+  .services > ul > li {
+    list-style: none;
+    padding-left: 0 !important;
+  }
+  
+  .services > ul > li > .columns {
+    height: 100%;
+    background-color: #ffffff;
+    position: relative;
+  }
+  
+  .services > ul > li > .columns > h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #45c3d3;
+  }
+  
+  .services > ul > li > .columns > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    color: slategrey;
+    list-style: none;
+  }
+  
+  .services b {
+    font-size: 1.5rem;
+    font-variant-caps: petite-caps;
+    color: #45c3d3;
+    list-style: none;
+  }
+  
+  .options {
+    font-size: 1.5rem !important;
+    margin-top: -2rem !important;
+  }
+  
+  .options-special {
+    font-size: 1.5rem !important;
+    margin: -2rem !important;
+    font-style: oblique;
+  }
+  
+  .services > ul > li > p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem 1rem;
+    color: slategrey;
+    text-align: center;
+  }
+  
+  .services > ul > li > a {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+  }
+  
+  .services > ul > li > .columns > ul > p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: slategrey;
+    list-style: none;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .columns a {
+    background-color: #002e56;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+  }
+  
+  .columns a:hover {
+    background-color: yellow;
+    color: #002e56;
+  }
+  
+  .services .line {
+    width: 80%;
+    height: 3px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    background-color: #45c3d3;
+    align-items: center;
+  }
+  
+  .services .scroll {
+    width: 50%;
+    display: inline-block;
+    margin-top: -2rem;
+  }
+  
+  .services .buttons {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0 4rem 0;
+  }
+  .services .button-solid {
+    margin: 0;
+    height: 3rem;
+    padding-top: 0.1rem;
+    width: 13rem;
+    font-size: .9em;
+  }
+
+  .trademark {
+    font-size: .9rem;
+    display: inline;
+    vertical-align: text-top;
+  }
+
+#one article .trademark-two {
+    font-size: .9rem;
+    display: inline;
+    vertical-align: text-top;
+    margin: 0 -1rem;
+  }
+
+#two {
+    background-color: #92f1fb;
+    color: slategray;
+}
+
+  /*-- -------------------------- -->
+  <--- THE PERSONAL RECONNECTION  -->
+  <--- -------------------------- -*/
+  #three {
+    background-color: #fffac3;
+    color: slategray;
+}
+  
+  #three .tiles-article:after {
+    background-color: #fffac3;
+  }
+
+  #three .disclaimer {
+    font-size: .8rem;
+    font-style: italic;
+  }
+
+  .tiles article:after {
+    background-color: transparent;
+  }
+
+  /*-- -------------------------- -->
+  <---           MOBILE           -->
+  <--- -------------------------- -*/
+
+  
+  @media screen and (max-width: 1680px) {
+    .services .button-solid {
+      padding-top: 0.3rem;
+    }
+  }
+  
+  @media screen and (max-width: 1280px) {
+    .tiles article {
+      padding: 4em 3em 2em 3em;
+      height: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 980px) {
+    .tiles article {
+      width: auto !important;
+    }
+  }
+  
+  @media screen and (max-width: 736px) {
+    .tiles article {
+      padding: 2em auto 1em auto;
+      height: 100%;
+    }
+  
+  
+   
+    #main > * > .inner {
+      padding: 2em 0 1em 0;
+      width: calc(100% - 3em);
+    }
+  
+    .services > ul > li > .columns > h3 {
+      font-size: 1.5rem;
+    }
+  
+    .services > ul > li > .columns > ul > li {
+      font-size: 1.1rem;
+    }
+  
+    .services > ul > li > .columns > ul > p > b  {
+      font-size: 1.1rem;
+    }
+  
+    .services > ul > li > .columns > ul > p {
+      font-size: 1.1rem;
+    }
+  
+    .options,
+    .options-special {
+      font-size: 1.1rem !important;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .tiles {
+      display: block;
+    }
+  
+    .tiles article {
+      height: 100%;
+      width: 100% !important;
+    }
+  
+ 
+  
+    #one > article > .major > p {
+      font-size: 1.1rem;
+      padding: .25rem 1rem;
+    }
+
+    .tiles article h3 {
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        padding: .25rem 1rem;
+      }
+    
+      .tiles article h4 {
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        padding: .25rem 1rem;
+      }
+
+      .tiles article p {
+        font-size: 1.1rem;
+        padding: .25rem 1rem;
+      }
+   
+    #main > * > .inner {
+      padding: 2em 0 1em 0;
+      width: calc(100% - 3em);
+    }
+  
+    .columns {
+      padding: 2em auto 1em auto;
+    }
+  
+    .services > ul > li > .columns > h2 {
+      font-size: 1.5rem;
+      color: #45c3d3;
+    }
+
+    .services > ul > li > .columns > ul > li {
+        padding: 1rem !important;
+    }
+  
+    .services .button-solid {
+      margin: 0;
+      height: 3rem;
+      padding-top: 0.3rem;
+      width: 13rem;
+      font-size: .9em;
+    }
+
+    .services .buttons {
+        margin: 1rem 0;
+    }
+    
+  }
+  

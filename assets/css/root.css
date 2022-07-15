@@ -10,7 +10,7 @@ header.major {
   width: -webkit-max-content;
   width: -ms-max-content;
   width: max-content;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 header.major > :first-child {
@@ -720,4 +720,8 @@ body.is-menu-visible #menu .inner {
   transform: none;
   opacity: 1;
   visibility: visible;
+}
+
+#menu .inner ul li {
+  font-size: 1.5rem;
 }

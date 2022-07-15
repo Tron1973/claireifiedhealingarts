@@ -16,26 +16,16 @@
   width: calc(100% - 6rem);
 }
 
-@media screen and (max-width: 736px) {
-  #main .inner {
-    padding: 2rem 0 1rem 0;
-    width: calc(100% - 3rem);
-  }
-
-  #main #about .inner .scroll {
-    width: 200px;
-  }
-}
-
 #main.alt {
   background-color: transparent;
 }
 
 #about {
   margin-bottom: 2rem;
+  padding: 0 4rem 0 2rem;
 }
 
-#about .inner h2 {
+#about .inner h3 {
   font-size: 2rem;
   text-align: left;
   padding-bottom: 1rem;
@@ -44,6 +34,7 @@
 
 #about .inner p {
   color: #595959;
+  font-size: 1.5rem;
 }
 
 #about .inner .scroll {
@@ -62,4 +53,33 @@
   height: 2.94444444rem;
   padding-top: 0.3rem;
   width: 13rem;
+}
+
+@media screen and (max-width: 736px) {
+  #main .inner {
+    padding: 2rem 0 1rem 0;
+    width: calc(100% - 3rem);
+  }
+
+  #main #about .inner .scroll {
+    width: 200px;
+  }
+
+  #about .inner h3 {
+    font-size: 1.5rem;
+  }
+
+  #about .inner p {
+    font-size: 1.1rem;
+  }
+
+  #about {
+    padding: 2em 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #about {
+    padding: 2em 2rem;
+  }
 }

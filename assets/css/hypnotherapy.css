@@ -54,12 +54,20 @@
 }
 
 .tiles article h3 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   padding: 1rem;
 }
 
 .tiles article p {
   padding: 1rem;
+}
+
+#one {
+  margin-bottom: 2rem;
+}
+
+#one article p {
+  font-size: 1.5rem;
 }
 
 .tiles article .link.primary {
@@ -121,43 +129,9 @@
 }
 
 .tiles article:nth-child(6n - 5):before {
-  background-color: #45c3d3;
+  background-color: rgba(162, 249, 236, 0.8);
 }
 
-@media screen and (max-width: 1280px) {
-  .tiles article {
-    padding: 4em 3em 2em 3em;
-    height: 100%;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .tiles article {
-    width: auto !important;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  .tiles article {
-    padding: 3em 1.5em 1em 1.5em;
-    height: 100%;
-  }
-
-  .tiles article h3 {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .tiles {
-    display: block;
-  }
-
-  .tiles article {
-    height: 100%;
-    width: 100% !important;
-  }
-}
 
 /*-- -------------------------- -->
 <---           MAIN             -->
@@ -180,13 +154,6 @@
   margin: 0 auto;
   max-width: 65rem;
   width: calc(100% - 6rem);
-}
-
-@media screen and (max-width: 736px) {
-  #main > * > .inner {
-    padding: 3rem 0 1rem 0;
-    width: calc(100% - 3rem);
-  }
 }
 
 #main.alt {
@@ -232,26 +199,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 1rem 1rem;
   color: slategrey;
   list-style: none;
 }
 
 .services b {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-variant-caps: petite-caps;
   color: #45c3d3;
   list-style: none;
 }
 
 .options {
-  font-size: 1rem !important;
+  font-size: 1.5rem !important;
   margin-top: 1rem !important;
 }
 
 .options-special {
-  font-size: 0.8rem !important;
+  font-size: 1.5rem !important;
   margin: -2rem !important;
   font-style: oblique;
 }
@@ -270,7 +237,7 @@
 }
 
 .services > ul > li > .columns > ul > p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
   color: slategrey;
   list-style: none;
@@ -280,7 +247,7 @@
 
 .columns a {
   background-color: #002e56;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 1rem;
   margin: 1rem;
   border-radius: 2rem;
@@ -314,6 +281,108 @@
 .services .button-solid {
   margin: 0;
   height: 3rem;
-  padding-top: 0.2rem;
+  padding-top: 0.1rem;
   width: 13rem;
+  font-size: .9em;
+}
+
+@media screen and (max-width: 1680px) {
+  .services .button-solid {
+    padding-top: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .tiles article {
+    padding: 4em 3em 2em 3em;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .tiles article {
+    width: auto !important;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .tiles article {
+    padding: 2em auto 1em auto;
+    height: 100%;
+  }
+
+  .tiles > h3 {
+    font-size: 1.5em;
+    padding: 0;
+  }
+ 
+  #main > * > .inner {
+    padding: 2em 0 1em 0;
+    width: calc(100% - 3em);
+  }
+
+  .services > ul > li > .columns > h3 {
+    font-size: 1.5rem;
+  }
+
+  .services > ul > li > .columns > ul > li {
+    font-size: 1.1rem;
+  }
+
+  .services > ul > li > .columns > ul > p > b  {
+    font-size: 1.1rem;
+  }
+
+  .services > ul > li > .columns > ul > p {
+    font-size: 1.1rem;
+  }
+
+  .options,
+  .options-special {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tiles {
+    display: block;
+  }
+
+  .tiles article {
+    height: 100%;
+    width: 100% !important;
+  }
+
+  #one  h3 {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+
+  #one > article > .major > p {
+    font-size: 1.1rem;
+    padding: 0;
+  }
+ 
+  #main > * > .inner {
+    padding: 2em 0 1em 0;
+    width: calc(100% - 3em);
+  }
+
+  .columns {
+    padding: 2em auto 1em auto;
+  }
+
+  .services > ul > li > .columns > h2 {
+    font-size: 1.5rem;
+    color: #45c3d3;
+  }
+
+  .services .button-solid {
+    margin: 0;
+    height: 3rem;
+    padding-top: 0.3rem;
+    width: 13rem;
+    font-size: .9em;
+  }
+  
 }

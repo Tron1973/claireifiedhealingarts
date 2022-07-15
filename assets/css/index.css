@@ -1,4 +1,4 @@
-/* Image */
+/* IMAGE */
 
 .image {
   border: 0;
@@ -58,7 +58,7 @@
   }
 }
 
-/* Tiles */
+/* TILES */
 
 .tiles {
   display: -moz-flex;
@@ -116,11 +116,15 @@
 }
 
 .tiles article h3 {
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 .tiles article h3 a:hover {
   color: inherit !important;
+}
+
+#one  article  p {
+  font-size: 1.5rem;
 }
 
 .tiles article .link.primary {
@@ -177,75 +181,59 @@
   opacity: 0;
 }
 
-.tiles article:nth-child(4n - 1),
-.tiles article:nth-child(4n - 2) {
+#rh {
+  width: 100%;
+}
+
+.tiles article:nth-child(3n - 1),
+.tiles article:nth-child(7n - 2),
+.tiles article:nth-child(7n - 1) {
   width: 60%;
 }
 
-.tiles article:nth-child(6n - 5):before {
-  background-color: #45c3d3;
+/* TILE COLORS */
+
+.tiles article:nth-child(1n):before {
+  background-color: #54e9fc;
 }
 
-.tiles article:nth-child(6n - 4):before {
-  background-color: #002e56;
+.tiles article:nth-child(7n - 5):before {
+  background-color: #fffac3;
 }
 
-.tiles article:nth-child(6n - 3):before {
-  background-color: #ffde00;
+.tiles article:nth-child(7n - 4):before {
+  background-color: rgba(162, 249, 236, 0.8);
 }
 
-.tiles article:nth-child(6n - 2):before {
-  background-color: #006293;
+.tiles article:nth-child(7n - 3):before {
+  background-color: #92f1fb;
 }
 
-.tiles article:nth-child(6n - 1):before {
-  background-color: #002e56;
+.tiles article:nth-child(7n - 2):before {
+  background-color: #54e9fc;
 }
 
-.tiles article:nth-child(6n):before {
-  background-color: #45c3d3;
+.tiles article:nth-child(7n - 1):before {
+  background-color: rgba(162, 249, 236, 0.8);
 }
 
-@media screen and (max-width: 1280px) {
-  .tiles article {
-    padding: 4em 3em 2em 3em;
-    height: 30vh;
-    max-height: 30em;
-    min-height: 20em;
-  }
+.tiles article:nth-child(7n):before {
+  background-color: #fffac3;
 }
 
-@media screen and (max-width: 980px) {
-  .tiles article {
-    width: 50% !important;
-  }
+.trademark {
+  font-size: .9rem;
+  display: inline;
+  vertical-align: text-top;
 }
 
-@media screen and (max-width: 736px) {
-  .tiles article {
-    padding: 3em 1.5em 1em 1.5em;
-    height: 16em;
-    max-height: none;
-    min-height: 0;
-  }
-
-  .tiles article h3 {
-    font-size: 1.5em;
-  }
+#one .trademark {
+  font-size: .9rem;
+  display: inline;
+  vertical-align: text-top;
 }
 
-@media screen and (max-width: 480px) {
-  .tiles {
-    display: block;
-  }
-
-  .tiles article {
-    height: 20em;
-    width: 100% !important;
-  }
-}
-
-/* Main */
+/* MAIN */
 
 #main {
   background-color: #ffffff;
@@ -266,13 +254,6 @@
   width: calc(100% - 6em);
 }
 
-@media screen and (max-width: 736px) {
-  #main > * > .inner {
-    padding: 3em 0 1em 0;
-    width: calc(100% - 3em);
-  }
-}
-
 #main.alt {
   background-color: transparent;
   border-bottom: solid 1px rgba(212, 212, 255, 0.1);
@@ -282,13 +263,14 @@
   margin-bottom: 2rem;
 }
 
-#about h2 {
+#about h3 {
   color: #45c3d3;
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 #about p {
   color: #595959;
+  font-size: 1.25rem;
 }
 
 #about .inner .major a:hover h2 {
@@ -299,8 +281,84 @@
 #about > .inner > .buttons {
   margin-top: 2.5rem;
 }
+
 #about .inner .scroll {
   width: 200px;
   margin-top: -2rem;
   margin-left: -1rem;
+}
+
+#about .inner > .major {
+  margin-bottom: 1rem;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 1280px) {
+  .tiles {
+    display: block;
+  }
+
+  .tiles article {
+    height: 20em;
+    width: 100% !important;
+  }
+
+  .tiles article {
+    padding: 4em 3em 2em 3em;
+    height: 30vh;
+    max-height: 30em;
+    min-height: 20em;
+  }
+
+  #about h3 {
+    color:#45c3d3;
+    font-size: 2rem;
+  }
+}
+
+
+
+@media screen and (max-width: 736px) {
+  .tiles article h3 {
+    font-size: 1.5em;
+  }
+
+  #main > * > .inner {
+    padding: 3em 0 1em 0;
+    width: calc(100% - 3em);
+  }
+
+  #rh {
+    height: auto;
+  }
+
+  #about {
+    padding: 3em 2rem 1em 2rem;
+  }
+  
+  #about h3 {
+    color:#45c3d3;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #one  article  p {
+    font-size: 1.1rem;
+  }
+
+  #about {
+    padding: 3em 3rem 1em 3rem;
+  }
+
+  #about h3 {
+    color: #45c3d3;
+    font-size: 1.25rem;
+  }
+  
+  #about p {
+    color: #595959;
+    font-size: 1.1rem;
+  }
 }
