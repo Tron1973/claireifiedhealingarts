@@ -727,7 +727,7 @@ body.is-menu-visible #menu .inner {
 }
 
 /*** PODCAST BUTTON ***/
-#podcast-button {
+a#podcast-button {
   width: max-content;
   padding: 0 20px;
 }
