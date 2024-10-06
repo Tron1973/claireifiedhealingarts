@@ -316,7 +316,7 @@ body.is-preload #header.alt {
   border-bottom: 0 !important;
   cursor: default;
   min-height: 100vh;
-  width:auto;
+  width: auto;
   position: relative;
   top: -4rem;
   margin-top: -2rem !important;
@@ -724,4 +724,19 @@ body.is-menu-visible #menu .inner {
 
 #menu .inner ul li {
   font-size: 1.5rem;
+}
+
+/*** PODCAST BUTTON ***/
+a#podcast-button {
+  right: 400px;
+  top: -100px;
+  width: max-content;
+  padding: 10px 20px;
+}
+@media screen and (max-width: 950px) {
+  a#podcast-button {
+    top: 360px;
+    right: 256px;
+    z-index: 999;
+  }
 }
