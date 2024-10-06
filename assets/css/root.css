@@ -727,16 +727,7 @@ body.is-menu-visible #menu .inner {
 }
 
 /*** PODCAST BUTTON ***/
-a#podcast-button {
-  right: 400px;
-  top: -100px;
+#podcast-button {
   width: max-content;
-  padding: 10px 20px;
-}
-@media screen and (max-width: 950px) {
-  a#podcast-button {
-    top: 360px;
-    right: 256px;
-    z-index: 999;
-  }
+  padding: 0 20px;
 }
